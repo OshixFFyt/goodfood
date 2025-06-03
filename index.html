@@ -11,13 +11,14 @@
     <link href="https://db.onlinewebfonts.com/c/860c3ec7bbc5da3e97233ccecafe512e?family=Circular+Std+Book"
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
     <title>Document</title>
 </head>
 
 <body>
 
     <div class="wrapper">
-        <header>
+        <header class="header" id="mainHeader">
             <div class="container">
                 <div class="about_block">
                     <div class="logo">
@@ -25,14 +26,29 @@
                     </div>
                     <img src="img/food.png" alt="" class="food">
                     <div class="right_block">
-                        <a href="#"><img src="img/search.svg" alt=""></a>
+                        <div class="search-wrapper">
+                            <img src="img/search.svg" alt="поиск" class="search-trigger" id="searchTrigger">
+                            <div class="search-dropdown" id="searchDropdown">
+                            <input type="text" class="search-field" placeholder="Введите запрос..." id="searchField">
+                            <button class="search-submit">Найти</button>
+                        </div>
                         <a href="#"><img src="img/basket.svg" alt=""></a>
-                        <a href="#"><img src="img/menu.svg" alt=""></a>
+                        <button class="burger-menu" id="burgerMenu">
+                            <img src="img/menu.svg" alt="">
+                        </button>
+                        <nav class="dropdown-menu" id="dropdownMenu">
+                            <ul>
+                                <li><a href="#">Главная</a></li>
+                                <li><a href="#">О нас</a></li>
+                                <li><a href="#">Услуги</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
             </div>
         </header>
-        <main>
+        <main class="content">
             <section class="home">
                 <div class="container">
                     <div class="about_block">
