@@ -53,6 +53,21 @@ body {
   border-radius: 4px 0 0 4px;
   outline: none;
 }
+.basket{
+  transform: scale(0.8);
+  transition: transform 0.3s ease;
+}
+.basket:hover {
+  transform: scale(1.1);
+}
+.burger{
+  transform: scale(0.8);
+  transition: transform 0.3s ease;
+
+}
+.burger:hover {
+  transform: scale(1.1);
+}
 
 .search-submit {
   padding: 8px 12px;
@@ -74,8 +89,60 @@ body {
   transition: all 0.3s ease;
   background: rgba(255,255,255,0.8);
   backdrop-filter: blur(5px);
+  z-index: 1000;
 }
-
+.arrow_left{
+  width: 24px;
+  height: 24px;
+  transform: scale(0.8);
+  transition: transform 0.3s ease;
+}
+.facebook{
+  width: 50px;
+  height: 50px;
+  transform: scale(0.8);
+  transition: transform 0.3s ease;
+}
+.facebook:hover {
+  transform: scale(1.1);
+}
+.instagram{
+  width: 50px;
+  height: 50px;
+  transform: scale(0.8);
+  transition: transform 0.3s ease;
+}
+.instagram:hover {
+  transform: scale(1.1);
+}
+.play{
+  
+  
+  transform: scale(0.8);
+  transition: transform 0.3s ease;
+}
+.play:hover {
+  transform: scale(1.1);
+}
+.twitter{
+  width: 50px;
+  height: 50px;
+  transform: scale(0.8);
+  transition: transform 0.3s ease;
+}
+.twitter:hover {
+  transform: scale(1.1);
+}
+.arrow_left:hover {
+  transform: scale(1.1);
+}
+.arrow_right {
+  transform: scale(0.8);
+  transition: transform 0.3s ease;
+}
+.arrow_right:hover {
+  transform: scale(1.1);
+}
 .header.scrolled {
   background: rgba(255, 255, 255, 0.452);
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
